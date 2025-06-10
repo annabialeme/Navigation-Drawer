@@ -1,12 +1,12 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import HomeScreen from './src/screens/HomeScreen';
-import ProfileScreen from './src/screens/ProfileScreen';
+import HomeScreen from './src/components/HomeScreen';
+import ProfileScreen from './src/components/ProfileScreen';
 
 const Drawer = createDrawerNavigator();
 
-const App = () => {
+export default function App() {
   return (
     <NavigationContainer>
       <Drawer.Navigator>
@@ -15,7 +15,8 @@ const App = () => {
       </Drawer.Navigator>
     </NavigationContainer>
   );
-};
+}
 
-export default App;
+
+
 
